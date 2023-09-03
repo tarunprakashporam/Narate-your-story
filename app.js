@@ -21,10 +21,6 @@ connectDB()
 
 const app = express()
 
-// Register Handlebars as the view engine
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
-
 // Body parser
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
